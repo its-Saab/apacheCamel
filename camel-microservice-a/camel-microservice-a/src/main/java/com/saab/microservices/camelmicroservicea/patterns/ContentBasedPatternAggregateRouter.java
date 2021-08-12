@@ -1,6 +1,8 @@
 package com.saab.microservices.camelmicroservicea.patterns;
 
 
+import com.saab.microservices.camelmicroservicea.ArrayListAggregationStrategy;
+import com.saab.microservices.camelmicroservicea.CurrencyExchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import org.springframework.stereotype.Component;

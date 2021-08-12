@@ -1,4 +1,4 @@
-package com.saab.microservices.camelmicroservicea.patterns;
+package com.saab.microservices.camelmicroservicea;
 
 import org.springframework.stereotype.Component;
 
