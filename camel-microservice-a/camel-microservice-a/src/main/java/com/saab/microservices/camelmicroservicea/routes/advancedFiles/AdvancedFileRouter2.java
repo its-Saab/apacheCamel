@@ -3,7 +3,7 @@ package com.saab.microservices.camelmicroservicea.routes.advancedFiles;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class AdvancedFileRouter2 extends RouteBuilder {
 
     @Override
