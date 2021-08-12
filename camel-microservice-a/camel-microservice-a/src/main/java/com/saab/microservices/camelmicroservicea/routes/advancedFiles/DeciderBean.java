@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
-@Component
+//@Component
 public class DeciderBean {
 
     Logger logger = LoggerFactory.getLogger(DeciderBean.class);
