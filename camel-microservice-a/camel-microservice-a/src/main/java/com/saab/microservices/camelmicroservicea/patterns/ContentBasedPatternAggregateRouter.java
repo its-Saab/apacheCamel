@@ -17,6 +17,9 @@ public class ContentBasedPatternAggregateRouter extends RouteBuilder {
         //Content Based Routing - choice()
         //Aggregate Pattern:
 
+        //To ensure no messages are lost
+        errorHandler(deadLetterChannel("activemq:dead-letter-queue"));
+
         from("file: files/aggregate-json")
                 .convertBodyTo(String.class)
                 .unmarshal().json(JsonLibrary.Jackson, CurrencyExchange.class)
