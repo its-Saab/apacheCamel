@@ -8,7 +8,7 @@ import org.apache.camel.model.dataformat.JsonLibrary;
 import org.springframework.stereotype.Component;
 
 
-@Component
+//@Component
 public class ContentBasedPatternAggregateRouter extends RouteBuilder {
 
 
