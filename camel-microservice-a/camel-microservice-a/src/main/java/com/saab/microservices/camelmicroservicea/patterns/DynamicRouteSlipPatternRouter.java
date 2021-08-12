@@ -20,12 +20,12 @@ public class DynamicRouteSlipPatternRouter extends RouteBuilder {
     @Override
     public void configure() throws Exception {
 
-        from("timer:routingSplit?period=10000")
+        from("timer:routingSplit?period={{timePeriod}}")
                 .transform().constant("Hardcoded Message")
                 .dynamicRouter(method(dynamicRouterBean));
 
         from("direct:endpoint1")
-                .to("log:direct-endpoint1");
+                .to("{{log-endpoint}}");
 
         from("direct:endpoint2")
                 .to("log:direct-endpoint2");
