@@ -25,6 +25,7 @@ public class DynamicRouteSlipPatternRouter extends RouteBuilder {
                 .dynamicRouter(method(dynamicRouterBean));
 
         from("direct:endpoint1")
+                //.wireTap("activemq:wired-activemq-queue") add the same following logging to the given endpoint
                 .to("{{log-endpoint}}");
 
         from("direct:endpoint2")
